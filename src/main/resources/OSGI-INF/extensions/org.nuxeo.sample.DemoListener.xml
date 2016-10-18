@@ -1,0 +1,12 @@
+<component name="org.nuxeo.sample.listener.contrib.DemoListener">
+
+  <extension target="org.nuxeo.ecm.core.event.EventServiceComponent"
+    point="listener">
+
+    <listener name="demolistener" async="false" postCommit="false"
+      class="org.nuxeo.sample.DemoListener" priority="100">
+      <event>documentCreated</event>
+    </listener>
+  </extension>
+
+</component>
